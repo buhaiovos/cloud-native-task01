@@ -7,10 +7,9 @@ import com.syndicate.deployment.annotations.lambda.LambdaHandler;
 import java.util.HashMap;
 import java.util.Map;
 
-@LambdaHandler(lambdaName = "hello_world",
-	roleName = "hello_world-role",
-	isPublishVersion = true,
-	aliasName = "${lambdas_alias_name}"
+@LambdaHandler(
+	lambdaName = "hello_world",
+	roleName = "hello_world-role"
 )
 public class HelloWorld implements RequestHandler<Object, Map<String, Object>> {
 
